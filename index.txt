@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- !Link Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--!Inicio:Barra de navegacion-->  
+    <nav class="navbar bg-primary" data-bs-theme="dark"> <!-- Es el color de la navegacion-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Glosario HTML</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--!Fin de :Barra de navegacion-->
+
+    <!--Divicion-->
+
+    <!--!Inicio de cards--> 
+    <div class="container"> 
+      <!--!Inicio de Etiqueta <html>-->
+      <div class="card text-bg-primary mb-3" style="max-width: 25rem"> <!-- Todo este div es la primera card, la clase *class es el color de la card * y el [style] es el tamañod e la card -->
+        <div class="card-header">Etiqueta <strong> &lt;html&gt;</strong></div>
+        <div class="card-body"> <!--Todo:Esta div hacer referencia al apartado de concepto -->
+          <h5 class="card-title">Concepto</h5>
+          <p class="card-text">
+            Es la etiqueta raíz que envuelve absolutamente todo el contenido del
+            sitio web. Le indica al navegador que el documento es una página
+            HTML.
+          </p>
+        </div> <!-- Todo: Fin de concepto -->
+
+        <!--*Codigo Sintaxis básica-->
+        <div class="container"> 
+          <div class="codigo"> <!--Este div contiene el código de ejemplo para darle estilo despues en css -->
+            <div class="card text-bg-dark mb-3" style="max-width: 25rem"> <!--Todo este div lo reutilizo de un pedacito de card-->
+              <div class="card-header">Sintaxis básica</div>
+              <div class="card-body">
+                <p class="card-text">
+                  <code>&lt;html&gt;...&lt;/html&gt;</code> <!--todo: &lt; es igual a el signo < y &gt; es igual al signo >-->
+                </p>
+              </div>
+            </div>
+          </div> <!-- Todo: Fin de código de ejemplo -->
+        </div>
+        <!--*Fin de Codigo Sintaxis básica-->
+
+        <!--*¿Cuándo usarlo?-->
+        <div class="card-body">
+          <h5 class="card-title">¿Cuándo usarlo?</h5>
+          <p class="card-text">
+            En la raíz de cualquier archivo HTML. Es el contenedor padre de todo
+          </p>
+        </div>
+        <!--*Fin:¿Cuándo usarlo?-->
+
+
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo real y explicación</h5>
+          <p class="card-text">
+            Define que todo el contenido dentro del bloque habla idioma español.
+          </p>
+        </div>
+        <!--*Inicio: Ejemplo real y explicación-->
+        <div class="container">
+          <div class="codigo"> <!--Este div contiene el código de ejemplo para darle estilo despues en css -->
+            <div class="card text-bg-dark mb-3" style="max-width: 25rem">
+              <div class="card-header">Ejemplo real y explicación</div>
+              <div class="card-body">
+                <p class="card-text">
+                  <code
+                    >&lt;!DOCTYPE html&gt; &lt;html lang="es"&gt;
+                    &lt;head&gt;&lt;/head&gt; &lt;body&gt;&lt;/body&gt;
+                    &lt;/html&gt;</code
+                  >
+                </p>
+              </div>
+            </div>
+          </div> <!-- Todo: Fin de ejemplo real y explicación -->
+        </div>
+        <!--*Fin: Ejemplo real y explicación-->
+      </div>
+      <!--!Fin de Etiqueta <html>-->
+        
+
+      <!--!Inicio de Etiqueta <head>-->
+      <div class="card text-bg-secondary mb-3" style="max-width: 25rem">
+        <div class="card-header">Etiqueta <strong> &lt;head&gt;</strong></div>
+        <div class="card-body">
+          <h5 class="card-title">Concepto</h5>
+          <p class="card-text">
+            Contiene la información "invisible" o metadatos de la página, como el título, caracteres especiales o enlaces a hojas de estilo.
+          </p>
+        </div>
+        <!--*Codigo-->
+        <div class="container">
+          <div class="codigo">
+            <div class="card text-bg-dark mb-3" style="max-width: 25rem">
+              <div class="card-header">Sintaxis básica</div>
+              <div class="card-body">
+                <p class="card-text">
+                  <code>&lt;head&gt;...&lt;/head&gt;</code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--*Fin de Codigo-->
+
+        <!--*Sintaxis básica-->
+        <div class="card-body">
+          <h5 class="card-title">¿Cuándo usarlo?</h5>
+          <p class="card-text">
+            Siempre dentro de  &lt;html&gt; , antes de &lt;body&gt; <body>. No muestra contenido en pantalla. 
+          </p>
+        </div>
+        <!--*Fin:Sintaxis básica-->
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo real y explicación</h5>
+          <p class="card-text">
+            Configura el título de la pestaña del navegador y la codificación de texto.
+          </p>
+        </div>
+        <!--*Inicio: Ejemplo real y explicación-->
+        <div class="container">
+          <div class="codigo">
+            <div class="card text-bg-dark mb-3" style="max-width: 25rem">
+              <div class="card-header">Ejemplo real y explicación</div>
+              <div class="card-body">
+                <p class="card-text">
+                  <code
+                    >&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;title&gt;Mi Blog&lt;/title &gt;&lt;/head &gt;</code
+                
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--*Fin: Ejemplo real y explicación-->
+      </div>
+      <!--!Fin de Etiqueta <head>-->
+
+      <div class="card text-bg-secondary mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Secondary card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-bg-success mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-danger mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Danger card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-warning mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-info mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Info card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-light mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Light card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-dark mb-3" style="max-width: 25rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--!Fin de cards-->
+
+    <!-- !Link Boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
