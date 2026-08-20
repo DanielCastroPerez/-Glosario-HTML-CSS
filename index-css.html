@@ -19,62 +19,77 @@
         </nav>
     </header>
 
+
     <main>
+
         <div id="introduction">
             <h1 class="title">¿Qué es CSS?</h1>
             <p>Reglas que permiten dar formato a los distintos elementos del lenguaje HTML</p>
 
-            <div id="introduction-example">
-                <h2 class="title">Ejemplo</h2>
 
-                <div class="example code">
-                    <div class="code html">
-                        <h3 class="html title">HTML</h3>
-                        <div class="html code-result">
-                            <div class="code-result code">
-                                <strong>&lt;p&gt;</strong>Desarrollo Web<strong>&lt;/p&gt</strong>;
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Ejemplo
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div id="introduction-example" class="accordion-content">
+                            <!--* Codigo -->
+                            <div class="example code">
+                                <div class="code html">
+                                    <h3 class="html title">HTML</h3>
+                                    <div class="html code-result">
+                                        <div class="code-result code">
+                                            <strong>&lt;p&gt;</strong>Desarrollo Web<strong>&lt;/p&gt</strong>;
+                                        </div>
+
+                                        <div class="code-result svg">
+                                            <div class="arrow-down"></div>
+                                        </div>
+
+                                        <div class="code-result result">
+                                            <p>Desarrollo web</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="html-to-css arrow-right"></div>
+
+                                <div class="code css">
+                                    <h3 class="css title">CSS</h3>
+                                    <div class="css code-result">
+                                        <div class="code-result code">
+                                            <p class="code init"> <strong>p</strong>{</p>
+                                            <p>color: red;</p>
+                                            <p>font-family: TwcenMT;</p>
+                                            <p class="code end">}</p>
+                                        </div>
+
+                                        <div class="code-result svg">
+                                            <div class="arrow-down"></div>
+                                        </div>
+
+                                        <div class="code-result result">
+                                            Desarrollo Web
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- ? Fin de codigo-->
 
-                            <div class="code-result svg">
-                                <div class="arrow-down"></div>
+                            <!-- * Nota -->
+                            <div class="note">
+                                <em><strong>NOTA: Si no se aplica el estilo (CSS), se verá otro tipo de tipografía, ya que al usar Bootstrap en este proyecto, la tipografía por defecto cambia. Así que no te preocupes si no ves el mismo tipo de letra en tu proyecto.</strong></em>
                             </div>
-
-                            <div class="code-result result">
-                                <p>Desarrollo web</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="code html-to-css-arrow svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                        </svg>
-                    </div>
-
-                    <div class="code css">
-                        <h3 class="css title">CSS</h3>
-                        <div class="css code-result">
-                            <div class="code-result code">
-                                <p class="code init"> <strong>p</strong>{</p>
-                                <p>color: red;</p>
-                                <p>font-family: TwcenMT;</p>
-                                <p class="code end">}</p>
-                            </div>
-
-                            <div class="code-result svg">
-                                <div class="arrow-down"></div>
-                            </div>
-
-                            <div class="code-result result">
-                                Desarrollo Web
-                            </div>
+                            <!-- ? Fin de nota -->
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </main>
