@@ -7,25 +7,23 @@ main {
     min-width: fit-content;
 }
 
-.accordion-content{
-    width: fit-content;
-    margin: auto;
-}
-
 #introduction-example{
+    min-width: fit-content;
+    background-color: whitesmoke;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 
     flex-wrap: wrap;
+
+    padding: 20px 15px 0px  !important;
 }
 
 #introduction-example .example.code {
     display: flex;
     align-items: center;
-
-    gap: 10px;
     flex-wrap: wrap;
     
     overflow-wrap: break-word;
@@ -40,9 +38,7 @@ main {
     /* box-shadow: 5px 10px 30px; */
 
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
+    flex-direction: column;    
 
     height: fit-content;
 }
@@ -65,6 +61,18 @@ main {
 
 .code p{
     height: 7px;
+}
+
+.note{
+    /* background-color: rgba(255, 255, 255, 0.799);
+    padding: 13px;
+    border-radius: 5px;
+    border: black solid 1px; */
+    align-self: flex-start;
+}
+
+div.card.note{
+    margin-bottom: 20px;
 }
 
 /* TODO: Bootstrap arrows
@@ -102,12 +110,7 @@ div.svg{
   background-size: contain;
 }
 
-.note{
-    background-color: whitesmoke;
-    padding: 13px;
-    border-radius: 5px;
-    border: black solid 1px;
-}
+
 
 /* 
     TODO: Code of the CSS example codes
