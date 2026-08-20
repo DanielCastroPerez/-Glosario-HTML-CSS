@@ -3,6 +3,10 @@ main {
     margin: auto;
 }
 
+#accordionExample{
+    min-width: fit-content;
+}
+
 .accordion-content{
     width: fit-content;
     margin: auto;
@@ -12,7 +16,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+
+    flex-wrap: wrap;
 }
 
 #introduction-example .example.code {
@@ -20,6 +26,10 @@ main {
     align-items: center;
 
     gap: 10px;
+    flex-wrap: wrap;
+    
+    overflow-wrap: break-word;
+
 }
 
 .example.code .code.html,
@@ -32,12 +42,16 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 
     height: fit-content;
 }
 
 .code.html {
     background-color: rgba(255, 100, 3, 0.862);
+}
+.example.code .code.css {
+    background-color: rgba(0, 0, 255, 0.278);
 }
 
 .html.code-result,
@@ -47,10 +61,6 @@ main {
 
     border-radius: 6px;
     border: solid 2px;
-}
-
-.example.code .code.css {
-    background-color: rgba(0, 0, 255, 0.278);
 }
 
 .code p{
@@ -67,6 +77,10 @@ main {
     ? <div class="svg [N-classes you want]"> 
         Centers the arrow for the HTML and CSS "result of code" examples.
 */
+
+div.svg{
+    text-align: center;
+}
 
 .arrow-down {
     display: inline-block;
@@ -86,6 +100,13 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.note{
+    background-color: whitesmoke;
+    padding: 13px;
+    border-radius: 5px;
+    border: black solid 1px;
 }
 
 /* 
