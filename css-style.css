@@ -1,0 +1,121 @@
+main {
+    width: 40vw;
+    margin: auto;
+}
+
+#accordionExample{
+    min-width: fit-content;
+}
+
+.accordion-content{
+    width: fit-content;
+    margin: auto;
+}
+
+#introduction-example{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+#introduction-example .example.code {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    overflow-wrap: break-word;
+
+}
+
+.example.code .code.html,
+.example.code .code.css {
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    /* box-shadow: 5px 10px 30px; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+    height: fit-content;
+}
+
+.code.html {
+    background-color: rgba(255, 100, 3, 0.862);
+}
+.example.code .code.css {
+    background-color: rgba(0, 0, 255, 0.278);
+}
+
+.html.code-result,
+.css.code-result {
+    background-color: whitesmoke;
+    padding: 20px;
+
+    border-radius: 6px;
+    border: solid 2px;
+}
+
+.code p{
+    height: 7px;
+}
+
+/* TODO: Bootstrap arrows
+    If you're going to use these, you have to use a formate like this
+        <div class="svg [N-classes you want]">
+            <div class="[class of the arrow you want]"></div>
+        </div>
+    ? Arrow class:
+        Write the arrow class you want inside the div container, just be sure to erase the "." symbol.
+    ? <div class="svg [N-classes you want]"> 
+        Centers the arrow for the HTML and CSS "result of code" examples.
+*/
+
+div.svg{
+    text-align: center;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='red' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.note{
+    background-color: whitesmoke;
+    padding: 13px;
+    border-radius: 5px;
+    border: black solid 1px;
+}
+
+/* 
+    TODO: Code of the CSS example codes
+        You don't have to touch these unless you want to change the output in the CSS example
+            but be sure you also change their respective HTML
+*/
+
+.css div.code-result.result {
+    color: red;
+    font-family: TwcenMT;
+}
